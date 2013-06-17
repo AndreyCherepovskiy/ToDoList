@@ -22,7 +22,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="ToDoList" />
+        <module name="entity" />
+        <module name="servisce" />
       </profile>
     </annotationProcessing>
   </component>
