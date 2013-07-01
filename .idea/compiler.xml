@@ -22,10 +22,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="controllers" />
         <module name="entity" />
         <module name="servisce" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="controllers" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

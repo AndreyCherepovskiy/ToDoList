@@ -3,11 +3,17 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/controllers" />
+  </component>
   <component name="IdProvider" IDEtalkID="CC4020DBE33891923044CF366DED17A6" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/entity/pom.xml" />
+        <option value="$PROJECT_DIR$/servisce/pom.xml" />
+        <option value="$PROJECT_DIR$/controllers/pom.xml" />
       </list>
     </option>
   </component>
