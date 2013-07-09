@@ -9,6 +9,10 @@ import javax.persistence.*;
     @NamedQuery(
         name="findUserById",
         query = "SELECT s FROM UserEntity s WHERE s.id = :id"
+    ),
+    @NamedQuery(
+        name="findUserLogins",
+        query = "SELECT s FROM UserEntity s"
     )
 })
 @Entity

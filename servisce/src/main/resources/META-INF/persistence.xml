@@ -7,7 +7,7 @@
         <class>cherepovskiy.todolist.model.entity.TaskEntity</class>
         <class>cherepovskiy.todolist.model.entity.UserEntity</class>
         <properties>
-            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
             <property name="hibernate.show_sql" value="true"/>
         </properties>
     </persistence-unit>

@@ -32,28 +32,6 @@ public class TestUser {
         assertEquals("Problem with finding userEntity", user.getLogin(), userService.findUserByLogin(login).getLogin());
     }
 
-    @Test
-    public void testCheckExistingUser(){
-        String login = "stark@gmail.com";
-        String password =  "ice";
-        User user = userService.createUser(login,password);
-        assertTrue("Problem with check existing user.", userService.checkUserWithLoginPassword(login, password));
-    }
 
-    @Test
-    public void testCheckNonexistentUserByLogin(){
-        String login = "stark@gmail.com";
-        String password =  "ice";
-        User user = userService.createUser(login,password);
-        assertFalse("Problem with nonexistent user by login", userService.checkUserWithLoginPassword(login + "0", password));
-    }
-
-    @Test
-    public void testCheckNonexistentUserByPassword(){
-        String login = "stark@gmail.com";
-        String password =  "ice";
-        User user = userService.createUser(login,password);
-        assertFalse("Problem with nonexistent user by password", userService.checkUserWithLoginPassword(login, password + "0"));
-    }
 }
 
