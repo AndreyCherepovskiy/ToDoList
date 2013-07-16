@@ -1,5 +1,8 @@
 package cherepovskiy.todolist.model.entity;
 
+import cherepovskiy.todolist.model.TaskState;
+import cherepovskiy.todolist.model.UserAuthorities;
+
 import javax.persistence.*;
 @NamedQueries({
     @NamedQuery(
@@ -25,12 +28,16 @@ public class UserEntity {
 
     private String password;
 
+    @Enumerated(EnumType.STRING)
+    private UserAuthorities authorities;
+
     public UserEntity() {
     }
 
-    public UserEntity(String login, String password) {
+    public UserEntity(String login, String password, UserAuthorities authorities) {
         this.login = login;
         this.password = password;
+        this.authorities = authorities;
     }
 
     public Long getId() {
@@ -55,5 +62,13 @@ public class UserEntity {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public UserAuthorities getAuthorities() {
+        return authorities;
+    }
+
+    public void setAuthorities(UserAuthorities authorities) {
+        this.authorities = authorities;
     }
 }

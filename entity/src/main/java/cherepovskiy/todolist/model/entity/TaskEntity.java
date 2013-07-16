@@ -1,11 +1,13 @@
 package cherepovskiy.todolist.model.entity;
 
+import cherepovskiy.todolist.model.TaskState;
+
 import javax.persistence.*;
 import java.util.Date;
 @NamedQueries({
         @NamedQuery(
                 name = "getTasksByAuthor",
-                query = "SELECT s FROM TaskEntity s WHERE s.author = :user"
+                query = "SELECT s FROM TaskEntity s WHERE s.author = :user and s.assignee != :user"
         ),
         @NamedQuery(
                 name = "getTasksByAssignee",
@@ -22,7 +24,7 @@ public class TaskEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String content;
-    @Temporal(value=TemporalType.DATE)
+    @Temporal(value=TemporalType.TIMESTAMP)
     private Date date;
     @Enumerated(EnumType.STRING)
     private TaskState state;

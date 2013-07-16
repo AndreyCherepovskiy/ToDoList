@@ -2,10 +2,10 @@
   <artifact type="exploded-war" name="controllers:war exploded">
     <output-path>$PROJECT_DIR$/controllers/target/controllers</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="controllers/web/Web" />
+      <element id="javaee-facet-resources" facet="web/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="controllers" />
+          <element id="module-output" name="web" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-core:3.1.4.RELEASE" />
@@ -24,8 +24,8 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.0.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.0.7.RELEASE" />
-          <element id="archive" name="servisce-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="servisce" />
+          <element id="archive" name="service-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="service" />
           </element>
           <element id="archive" name="entity-1.0-SNAPSHOT.jar">
             <element id="module-output" name="entity" />
@@ -43,6 +43,8 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:3.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.hsqldb:hsqldb:2.0.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.19" />
+          <element id="library" level="project" name="Maven: cglib:cglib:2.2.2" />
+          <element id="library" level="project" name="Maven: asm:asm:3.3.1" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.12" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.12" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.2.2" />

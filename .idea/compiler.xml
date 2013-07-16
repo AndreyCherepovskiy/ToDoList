@@ -24,7 +24,9 @@
         <processorPath useClasspath="true" />
         <module name="controllers" />
         <module name="entity" />
+        <module name="service" />
         <module name="servisce" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
